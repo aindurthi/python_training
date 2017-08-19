@@ -1,0 +1,30 @@
+#!usr/bin/python
+a = raw_input("Enter the input string:")
+symbol = "~`!@#$%^&*()_-+={}[]:>;',</?*-+"
+b = []
+c = []
+d = []
+e = []
+f = []
+for i in range(len(a)):
+   if a[i].isupper():
+     b.append(a[i])
+   if a[i].islower():
+     c.append(a[i])
+   if a[i].isspace():
+     d.append(a[i])
+   if a[i].isdigit():
+     e.append(a[i])
+print "Length of Small letter:",len(c)
+print "Small Letters:",c
+print "Length of Capital letter:",len(b)
+print "Capital Letters:",b
+print "Length of space letter:",len(d)
+print "spaces Letters:",d
+print "Length of number letter:",len(e)
+print "number Letters:",e
+for j in a:
+  if j in symbol:
+    f.append(j)
+print "Length of special letter:",len(f)
+print "special Letters:",f
